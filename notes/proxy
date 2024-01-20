@@ -1,0 +1,5 @@
+to get proxy 
+
+```
+kubectl proxy
+```
