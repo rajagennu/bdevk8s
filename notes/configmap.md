@@ -1,0 +1,2 @@
+- to use entire ConfigMap use `envFrom` tag
+- to use a specific ConfigMap use 'env' tag
