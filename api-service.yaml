@@ -9,4 +9,8 @@ spec:
   selector:
     app: synergychat-api
   type: ClusterIP
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
 
