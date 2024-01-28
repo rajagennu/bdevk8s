@@ -1,0 +1,10 @@
+---
+# Memory is measured in bytes, so we can use the suffixes Ki, Mi, and Gi to specify kilobytes, megabytes, and gigabytes, respectively. For example, 512Mi is 512 megabytes.
+spec:
+  containers:
+  - name: <container-name>
+    image: <image-name>
+    resources:
+      limits:
+        memory: <max-memory>
+        cpu: <max-cpu>
