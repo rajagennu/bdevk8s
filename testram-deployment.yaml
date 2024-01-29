@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: synergychat-testram
+  name: synergychat-testram
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: synergychat-testram
+  template:
+    metadata:
+      labels:
+        app: synergychat-testram
+    spec:
+      containers:
+        - image: lanecwagner/synergychat-testram:latest
+          name: synergychat-testram
+          resources:
+            limits:
+              memory: 40000000Mi
+              cpu: 10m
+            requests:
+              memory: 40000000Mi
